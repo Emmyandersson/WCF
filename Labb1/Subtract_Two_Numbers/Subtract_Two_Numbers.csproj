@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E5AE9687-15B3-483E-A4C4-A05485240066}</ProjectGuid>
+    <ProjectGuid>{06053758-FCB5-44F0-87FA-EA1D58A2F914}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Klienten</RootNamespace>
-    <AssemblyName>Klienten</AssemblyName>
+    <RootNamespace>Subtract_Two_Numbers</RootNamespace>
+    <AssemblyName>Subtract_Two_Numbers</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -48,8 +48,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,13 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CalculateThreeNumbers.aspx" />
-    <Content Include="CalculateTwoNumbers.aspx" />
     <Content Include="packages.config" />
-    <None Include="Service References\Calc2Nums\Calculator.wsdl" />
-    <None Include="Service References\Calc3Nums\CalcThreeNums.wsdl" />
-    <None Include="Service References\SubtractTwoNums\Subtract_2_Nums.wsdl" />
-    <None Include="Service References\WeatherPrediction\Weather.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -83,111 +75,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
-    <None Include="Service References\Calc2Nums\Calculator.disco" />
-    <None Include="Service References\Calc2Nums\configuration91.svcinfo" />
-    <None Include="Service References\Calc2Nums\configuration.svcinfo" />
-    <None Include="Service References\Calc2Nums\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\Calc3Nums\CalcThreeNums.disco" />
-    <None Include="Service References\Calc3Nums\configuration91.svcinfo" />
-    <None Include="Service References\Calc3Nums\configuration.svcinfo" />
-    <None Include="Service References\Calc3Nums\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\SubtractTwoNums\Subtract_2_Nums.disco" />
-    <None Include="Service References\SubtractTwoNums\configuration91.svcinfo" />
-    <None Include="Service References\SubtractTwoNums\configuration.svcinfo" />
-    <None Include="Service References\SubtractTwoNums\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <Content Include="Service References\WeatherPrediction\Klienten.WeatherPrediction.HelloWorldResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\WeatherPrediction\Klienten.WeatherPrediction.WeatherForecastResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Service References\WeatherPrediction\Weather.disco" />
-    <None Include="Service References\WeatherPrediction\configuration91.svcinfo" />
-    <None Include="Service References\WeatherPrediction\configuration.svcinfo" />
-    <None Include="Service References\WeatherPrediction\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <Content Include="SubtractTwoNumbers.aspx" />
-    <Content Include="WeatherSide.aspx" />
+    <Content Include="Subtract_2_Nums.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculateThreeNumbers.aspx.cs">
-      <DependentUpon>CalculateThreeNumbers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CalculateThreeNumbers.aspx.designer.cs">
-      <DependentUpon>CalculateThreeNumbers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CalculateTwoNumbers.aspx.cs">
-      <DependentUpon>CalculateTwoNumbers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CalculateTwoNumbers.aspx.designer.cs">
-      <DependentUpon>CalculateTwoNumbers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\Calc2Nums\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
+    <Compile Include="Subtract_2_Nums.asmx.cs">
+      <DependentUpon>Subtract_2_Nums.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Service References\Calc3Nums\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\SubtractTwoNums\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\WeatherPrediction\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="SubtractTwoNumbers.aspx.cs">
-      <DependentUpon>SubtractTwoNumbers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SubtractTwoNumbers.aspx.designer.cs">
-      <DependentUpon>SubtractTwoNumbers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WeatherSide.aspx.cs">
-      <DependentUpon>WeatherSide.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WeatherSide.aspx.designer.cs">
-      <DependentUpon>WeatherSide.aspx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\Calc2Nums\" />
-    <WCFMetadataStorage Include="Service References\Calc3Nums\" />
-    <WCFMetadataStorage Include="Service References\SubtractTwoNums\" />
-    <WCFMetadataStorage Include="Service References\WeatherPrediction\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -202,9 +98,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>31540</DevelopmentServerPort>
+          <DevelopmentServerPort>33847</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:31540/</IISUrl>
+          <IISUrl>http://localhost:33847/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
