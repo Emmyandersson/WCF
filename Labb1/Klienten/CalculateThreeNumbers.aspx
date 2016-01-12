@@ -19,6 +19,7 @@
         <asp:TextBox ID="tbxNum3" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnSumOfThree" runat="server" OnClick="btnSumOfThree_Click" Text="Calculate the Sum" />
+        <asp:Label ID="lblResult" runat="server" Text="Result"></asp:Label>
     
     </div>
     </form>

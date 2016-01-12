@@ -18,7 +18,7 @@ namespace Klienten
         protected void btnSumOfThree_Click(object sender, EventArgs e)
         {
             Calc3Nums.CalcThreeNumsSoapClient calc = new CalcThreeNumsSoapClient();
-            calc.CalcThree(int.Parse(num1Tbx.Text), int.Parse(tbxNum2.Text), int.Parse(tbxNum3.Text));
+             lblResult.Text = calc.CalcThree(int.Parse(num1Tbx.Text), int.Parse(tbxNum2.Text), int.Parse(tbxNum3.Text)).ToString();
         }
     }
 }
