@@ -18,7 +18,7 @@ namespace Klienten
         protected void btnSubtract_Click(object sender, EventArgs e)
         {
             SubtractTwoNums.Subtract_2_NumsSoapClient sub = new Subtract_2_NumsSoapClient();
-            sub.Subtractor()
+            lblResult.Text = sub.Subtractor(int.Parse(tbxNum1.Text), int.Parse(tbxNum2.Text)).ToString();
         }
     }
 }
