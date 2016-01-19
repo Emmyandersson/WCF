@@ -18,9 +18,9 @@ namespace WCF
     {
 
         [WebMethod]
-        public string Calculator(int height, int weight)
+        public double Calculator(double height, double weight)
         {
-            return (weight/(height*height)).ToString();
+            return weight/(height*height);
         }
     }
 }

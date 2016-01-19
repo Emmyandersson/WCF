@@ -1,1 +1,10 @@
 C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\LABB 2 - KLIENTER\BmiClient\bin\Debug\BmiClient.exe.config
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\BmiClient\bin\Debug\BmiClient.exe.config
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\BmiClient\bin\Debug\BmiClient.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\BmiClient\bin\Debug\BmiClient.pdb
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\BmiClient\obj\Debug\BmiClient.csprojResolveAssemblyReference.cache
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\BmiClient\obj\Debug\BmiClient.Form1.resources
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\BmiClient\obj\Debug\BmiClient.Properties.Resources.resources
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\BmiClient\obj\Debug\BmiClient.csproj.GenerateResource.Cache
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\BmiClient\obj\Debug\BmiClient.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\BmiClient\obj\Debug\BmiClient.pdb
