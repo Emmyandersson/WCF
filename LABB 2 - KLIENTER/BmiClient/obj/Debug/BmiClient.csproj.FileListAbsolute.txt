@@ -1,0 +1,1 @@
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\LABB 2 - KLIENTER\BmiClient\bin\Debug\BmiClient.exe.config

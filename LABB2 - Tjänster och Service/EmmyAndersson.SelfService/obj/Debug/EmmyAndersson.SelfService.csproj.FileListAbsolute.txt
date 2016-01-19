@@ -1,0 +1,1 @@
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\EmmyAndersson.SelfService\bin\Debug\EmmyAndersson.SelfService.exe.config
