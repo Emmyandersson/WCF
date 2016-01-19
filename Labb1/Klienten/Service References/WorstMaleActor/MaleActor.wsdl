@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AddAllBadActors">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddAllBadActorsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllBadActors">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="year" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllBadActorsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllBadActorsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddAllBadActorsSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAllBadActors" />
+  </wsdl:message>
+  <wsdl:message name="AddAllBadActorsSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAllBadActorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllBadActorsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllBadActors" />
+  </wsdl:message>
+  <wsdl:message name="GetAllBadActorsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllBadActorsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MaleActorSoap">
+    <wsdl:operation name="AddAllBadActors">
+      <wsdl:input message="tns:AddAllBadActorsSoapIn" />
+      <wsdl:output message="tns:AddAllBadActorsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBadActors">
+      <wsdl:input message="tns:GetAllBadActorsSoapIn" />
+      <wsdl:output message="tns:GetAllBadActorsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MaleActorSoap" type="tns:MaleActorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddAllBadActors">
+      <soap:operation soapAction="http://tempuri.org/AddAllBadActors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBadActors">
+      <soap:operation soapAction="http://tempuri.org/GetAllBadActors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MaleActorSoap12" type="tns:MaleActorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddAllBadActors">
+      <soap12:operation soapAction="http://tempuri.org/AddAllBadActors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBadActors">
+      <soap12:operation soapAction="http://tempuri.org/GetAllBadActors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MaleActor">
+    <wsdl:port name="MaleActorSoap" binding="tns:MaleActorSoap">
+      <soap:address location="http://localhost:11681/MaleActor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MaleActorSoap12" binding="tns:MaleActorSoap12">
+      <soap12:address location="http://localhost:11681/MaleActor.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -68,6 +68,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BadActors.aspx" />
     <Content Include="CalculateThreeNumbers.aspx" />
     <Content Include="CalculateTwoNumbers.aspx" />
     <Content Include="Namnsdagar.aspx" />
@@ -85,6 +86,10 @@
     <None Include="Service References\Oscars\OscarNominatedMovies.wsdl" />
     <None Include="Service References\SubtractTwoNums\Subtract_2_Nums.wsdl" />
     <None Include="Service References\WeatherPrediction\Weather.wsdl" />
+    <Content Include="Service References\WorstMaleActor\Klienten.WorstMaleActor.GetAllBadActorsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\WorstMaleActor\MaleActor.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -142,11 +147,25 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\WorstMaleActor\MaleActor.disco" />
+    <None Include="Service References\WorstMaleActor\configuration91.svcinfo" />
+    <None Include="Service References\WorstMaleActor\configuration.svcinfo" />
+    <None Include="Service References\WorstMaleActor\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="SubtractTwoNumbers.aspx" />
     <Content Include="WeatherSide.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BadActors.aspx.cs">
+      <DependentUpon>BadActors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BadActors.aspx.designer.cs">
+      <DependentUpon>BadActors.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CalculateThreeNumbers.aspx.cs">
       <DependentUpon>CalculateThreeNumbers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -209,6 +228,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\WorstMaleActor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="SubtractTwoNumbers.aspx.cs">
       <DependentUpon>SubtractTwoNumbers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -238,6 +262,7 @@
     <WCFMetadataStorage Include="Service References\Oscars\" />
     <WCFMetadataStorage Include="Service References\SubtractTwoNums\" />
     <WCFMetadataStorage Include="Service References\WeatherPrediction\" />
+    <WCFMetadataStorage Include="Service References\WorstMaleActor\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

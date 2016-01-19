@@ -33,9 +33,19 @@ namespace WorstMaleCharacter
                 {
                     var line = sr.ReadLine();
                      var splitLine = line?.Split(new []{"\t", "\n"},StringSplitOptions.RemoveEmptyEntries);
-                    
+
+                    if (splitLine?.Length == 2)
+                    _worstActorDict.Add(splitLine[0], splitLine[1]);
                 }
             }
+        }
+
+        [WebMethod]
+        public string GetAllBadActors(string year)
+        {
+            return _worstActorDict.ContainsKey(year)
+                ? _worstActorDict[year]
+                : "Finns ingen film detta årtal registrerat.";
         }
     }
 }
