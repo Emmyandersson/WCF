@@ -11,6 +11,6 @@ namespace EmmyAndersson.SelfService
     interface IBmi
     {
         [OperationContract]
-        string Calculate(int height, int weight);
+        string Calculate(double height, double weight);
     }
 }

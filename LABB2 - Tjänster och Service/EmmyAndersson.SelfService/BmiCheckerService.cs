@@ -8,9 +8,11 @@ namespace EmmyAndersson.SelfService
 {
     public class BmiCheckerService : IBmi
     {
-        public string Calculate(int height, int weight)
+        public string Calculate(double height, double weight)
         {
             return (weight/(height*height)).ToString();
         }
+
+       
     }
 }
