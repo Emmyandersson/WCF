@@ -71,6 +71,7 @@
     <Content Include="CalculateThreeNumbers.aspx" />
     <Content Include="CalculateTwoNumbers.aspx" />
     <Content Include="Namnsdagar.aspx" />
+    <Content Include="OscarWinners.aspx" />
     <Content Include="packages.config" />
     <None Include="Service References\Calc2Nums\Calculator.wsdl" />
     <None Include="Service References\Calc3Nums\CalcThreeNums.wsdl" />
@@ -78,6 +79,10 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\Namesdagar\NamnsdagGenerator.wsdl" />
+    <Content Include="Service References\OscarWinners\Klienten.OscarWinners.GetAllWinningMoviesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\OscarWinners\OscarNominatedMovies.wsdl" />
     <None Include="Service References\SubtractTwoNums\Subtract_2_Nums.wsdl" />
     <None Include="Service References\WeatherPrediction\Weather.wsdl" />
     <None Include="Web.Debug.config">
@@ -114,6 +119,13 @@
     <None Include="Service References\Namesdagar\configuration91.svcinfo" />
     <None Include="Service References\Namesdagar\configuration.svcinfo" />
     <None Include="Service References\Namesdagar\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\OscarWinners\OscarNominatedMovies.disco" />
+    <None Include="Service References\OscarWinners\configuration91.svcinfo" />
+    <None Include="Service References\OscarWinners\configuration.svcinfo" />
+    <None Include="Service References\OscarWinners\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -159,6 +171,13 @@
     <Compile Include="Namnsdagar.aspx.designer.cs">
       <DependentUpon>Namnsdagar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OscarWinners.aspx.cs">
+      <DependentUpon>OscarWinners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OscarWinners.aspx.designer.cs">
+      <DependentUpon>OscarWinners.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\Calc2Nums\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -171,6 +190,11 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Service References\Namesdagar\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OscarWinners\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -211,6 +235,7 @@
     <WCFMetadataStorage Include="Service References\Calc2Nums\" />
     <WCFMetadataStorage Include="Service References\Calc3Nums\" />
     <WCFMetadataStorage Include="Service References\Namesdagar\" />
+    <WCFMetadataStorage Include="Service References\OscarWinners\" />
     <WCFMetadataStorage Include="Service References\SubtractTwoNums\" />
     <WCFMetadataStorage Include="Service References\WeatherPrediction\" />
   </ItemGroup>

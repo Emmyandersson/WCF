@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Movies">
+        <s:complexType />
+      </s:element>
+      <s:element name="MoviesResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllWinningMovies">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="year" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllWinningMoviesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllWinningMoviesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="MoviesSoapIn">
+    <wsdl:part name="parameters" element="tns:Movies" />
+  </wsdl:message>
+  <wsdl:message name="MoviesSoapOut">
+    <wsdl:part name="parameters" element="tns:MoviesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllWinningMoviesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllWinningMovies" />
+  </wsdl:message>
+  <wsdl:message name="GetAllWinningMoviesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllWinningMoviesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OscarNominatedMoviesSoap">
+    <wsdl:operation name="Movies">
+      <wsdl:input message="tns:MoviesSoapIn" />
+      <wsdl:output message="tns:MoviesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWinningMovies">
+      <wsdl:input message="tns:GetAllWinningMoviesSoapIn" />
+      <wsdl:output message="tns:GetAllWinningMoviesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OscarNominatedMoviesSoap" type="tns:OscarNominatedMoviesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Movies">
+      <soap:operation soapAction="http://tempuri.org/Movies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWinningMovies">
+      <soap:operation soapAction="http://tempuri.org/GetAllWinningMovies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OscarNominatedMoviesSoap12" type="tns:OscarNominatedMoviesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Movies">
+      <soap12:operation soapAction="http://tempuri.org/Movies" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWinningMovies">
+      <soap12:operation soapAction="http://tempuri.org/GetAllWinningMovies" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OscarNominatedMovies">
+    <wsdl:port name="OscarNominatedMoviesSoap" binding="tns:OscarNominatedMoviesSoap">
+      <soap:address location="http://localhost:11033/OscarNominatedMovies.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OscarNominatedMoviesSoap12" binding="tns:OscarNominatedMoviesSoap12">
+      <soap12:address location="http://localhost:11033/OscarNominatedMovies.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
