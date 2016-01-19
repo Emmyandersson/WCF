@@ -36,9 +36,8 @@ namespace Nominated_Movies
                     var splitLine = line?.Split(new[] { ":", "\n" }, StringSplitOptions.RemoveEmptyEntries);
 
                     if (splitLine?.Length == 2 )
-                    {
-                        _movieDictionary.Add(splitLine[0], splitLine[1]);
-                    }
+                    _movieDictionary.Add(splitLine[0], splitLine[1]);
+                    
                 } 
             }
         }
