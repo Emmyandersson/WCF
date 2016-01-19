@@ -17,41 +17,51 @@ namespace Namnsdagar
     // [System.Web.Script.Services.ScriptService]
     public class NamnsdagGenerator : System.Web.Services.WebService
     {
+        Dictionary<string, string> nameDaysDict = new Dictionary<string, string>();
 
+    
         [WebMethod]
-        public string NameDays(string name)
+        public void NameDays()
         {
-            var nameDaysDict = new Dictionary<string, DateTime>();
-            using (var sr = new StreamReader("../namnsdagar.txt"))
+            
+            using (var sr = new StreamReader(@"C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB1\Namnsdagar\namnsdagar.txt"))
             {
                 while (sr.Peek() >= 0)
                 {
                     var line = sr.ReadLine();
                     if (line != null)
                     {
-                        var splitLine = line.Split(new string[] { "  ", ",", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+                        var splitLine = line.Split(new string[] {"\t", ",", "\n"}, StringSplitOptions.RemoveEmptyEntries);
 
                         if (splitLine.Length == 2)
                         {
-                            nameDaysDict.Add(splitLine[1], DateTime.Parse(splitLine[0]));
+                            nameDaysDict.Add(splitLine[1].ToLower(), (splitLine[0]));
                         }
                         if (splitLine.Length == 3)
                         {
-                            nameDaysDict.Add(splitLine[1], DateTime.Parse(splitLine[0]));
-                            nameDaysDict.Add(splitLine[2], DateTime.Parse(splitLine[0]));
+                            nameDaysDict.Add(splitLine[1].ToLower(), splitLine[0]);
+                            nameDaysDict.Add(splitLine[2].ToLower(), splitLine[0]);
                         }
-                        if (splitLine.Length != 4) continue;
-                        nameDaysDict.Add(splitLine[1], DateTime.Parse(splitLine[0]));
-                        nameDaysDict.Add(splitLine[2], DateTime.Parse(splitLine[0]));
-                        nameDaysDict.Add(splitLine[3], DateTime.Parse(splitLine[0]));
+                        if (splitLine.Length == 4)
+                        {
+                            nameDaysDict.Add(splitLine[1].ToLower(), splitLine[0]);
+                            nameDaysDict.Add(splitLine[2].ToLower(), splitLine[0]);
+                            nameDaysDict.Add(splitLine[3].ToLower(), splitLine[0]);
+                        }                                                        
                     }
-                  
-
-                }
-
+                }                                                                   
+                
             }
 
         }
+
+        [WebMethod]
+        public string NameDayDateReturner(string inputName)
+        {
+            NameDays();
+            return nameDaysDict.ContainsKey(inputName.ToLower()) ? nameDaysDict[inputName.ToLower()] : "Namnet du angav har ingen namnsdag! ";
+        }
+
 
 
     }
