@@ -6,14 +6,15 @@ using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WCF_service
+
+namespace EmmyAndersson.SelfService
 {
     class Program
     {
         static void Main(string[] args)
         {
             //Base Address
-            Uri baseAddress = new Uri("http://localhost:8080/WCF_service");
+            Uri baseAddress = new Uri("http://localhost:8080/EmmyAndersson.SelfService");
             //ServiceHost
             ServiceHost selfServiceHost = new ServiceHost(typeof(BmiCheckerService), baseAddress);
 

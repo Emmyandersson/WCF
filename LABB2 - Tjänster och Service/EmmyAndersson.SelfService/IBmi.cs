@@ -5,9 +5,9 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WCF_service
+namespace EmmyAndersson.SelfService
 {
-    [ServiceContract(Namespace = "http://WCF_service")]
+    [ServiceContract(Namespace = "http://EmmyAndersson.SelfService")]
     interface IBmi
     {
         [OperationContract]
