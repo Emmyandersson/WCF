@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Klienten.OscarWinners {
+namespace Klienten.Oscars {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="OscarWinners.OscarNominatedMoviesSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Oscars.OscarNominatedMoviesSoap")]
     public interface OscarNominatedMoviesSoap {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Movies", ReplyAction="*")]
@@ -23,10 +23,10 @@ namespace Klienten.OscarWinners {
         
         // CODEGEN: Generating message contract since element name year from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllWinningMovies", ReplyAction="*")]
-        Klienten.OscarWinners.GetAllWinningMoviesResponse GetAllWinningMovies(Klienten.OscarWinners.GetAllWinningMoviesRequest request);
+        Klienten.Oscars.GetAllWinningMoviesResponse GetAllWinningMovies(Klienten.Oscars.GetAllWinningMoviesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllWinningMovies", ReplyAction="*")]
-        System.Threading.Tasks.Task<Klienten.OscarWinners.GetAllWinningMoviesResponse> GetAllWinningMoviesAsync(Klienten.OscarWinners.GetAllWinningMoviesRequest request);
+        System.Threading.Tasks.Task<Klienten.Oscars.GetAllWinningMoviesResponse> GetAllWinningMoviesAsync(Klienten.Oscars.GetAllWinningMoviesRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -36,12 +36,12 @@ namespace Klienten.OscarWinners {
     public partial class GetAllWinningMoviesRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllWinningMovies", Namespace="http://tempuri.org/", Order=0)]
-        public Klienten.OscarWinners.GetAllWinningMoviesRequestBody Body;
+        public Klienten.Oscars.GetAllWinningMoviesRequestBody Body;
         
         public GetAllWinningMoviesRequest() {
         }
         
-        public GetAllWinningMoviesRequest(Klienten.OscarWinners.GetAllWinningMoviesRequestBody Body) {
+        public GetAllWinningMoviesRequest(Klienten.Oscars.GetAllWinningMoviesRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -70,12 +70,12 @@ namespace Klienten.OscarWinners {
     public partial class GetAllWinningMoviesResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllWinningMoviesResponse", Namespace="http://tempuri.org/", Order=0)]
-        public Klienten.OscarWinners.GetAllWinningMoviesResponseBody Body;
+        public Klienten.Oscars.GetAllWinningMoviesResponseBody Body;
         
         public GetAllWinningMoviesResponse() {
         }
         
-        public GetAllWinningMoviesResponse(Klienten.OscarWinners.GetAllWinningMoviesResponseBody Body) {
+        public GetAllWinningMoviesResponse(Klienten.Oscars.GetAllWinningMoviesResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -98,12 +98,12 @@ namespace Klienten.OscarWinners {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface OscarNominatedMoviesSoapChannel : Klienten.OscarWinners.OscarNominatedMoviesSoap, System.ServiceModel.IClientChannel {
+    public interface OscarNominatedMoviesSoapChannel : Klienten.Oscars.OscarNominatedMoviesSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class OscarNominatedMoviesSoapClient : System.ServiceModel.ClientBase<Klienten.OscarWinners.OscarNominatedMoviesSoap>, Klienten.OscarWinners.OscarNominatedMoviesSoap {
+    public partial class OscarNominatedMoviesSoapClient : System.ServiceModel.ClientBase<Klienten.Oscars.OscarNominatedMoviesSoap>, Klienten.Oscars.OscarNominatedMoviesSoap {
         
         public OscarNominatedMoviesSoapClient() {
         }
@@ -133,28 +133,28 @@ namespace Klienten.OscarWinners {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Klienten.OscarWinners.GetAllWinningMoviesResponse Klienten.OscarWinners.OscarNominatedMoviesSoap.GetAllWinningMovies(Klienten.OscarWinners.GetAllWinningMoviesRequest request) {
+        Klienten.Oscars.GetAllWinningMoviesResponse Klienten.Oscars.OscarNominatedMoviesSoap.GetAllWinningMovies(Klienten.Oscars.GetAllWinningMoviesRequest request) {
             return base.Channel.GetAllWinningMovies(request);
         }
         
         public string GetAllWinningMovies(string year) {
-            Klienten.OscarWinners.GetAllWinningMoviesRequest inValue = new Klienten.OscarWinners.GetAllWinningMoviesRequest();
-            inValue.Body = new Klienten.OscarWinners.GetAllWinningMoviesRequestBody();
+            Klienten.Oscars.GetAllWinningMoviesRequest inValue = new Klienten.Oscars.GetAllWinningMoviesRequest();
+            inValue.Body = new Klienten.Oscars.GetAllWinningMoviesRequestBody();
             inValue.Body.year = year;
-            Klienten.OscarWinners.GetAllWinningMoviesResponse retVal = ((Klienten.OscarWinners.OscarNominatedMoviesSoap)(this)).GetAllWinningMovies(inValue);
+            Klienten.Oscars.GetAllWinningMoviesResponse retVal = ((Klienten.Oscars.OscarNominatedMoviesSoap)(this)).GetAllWinningMovies(inValue);
             return retVal.Body.GetAllWinningMoviesResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Klienten.OscarWinners.GetAllWinningMoviesResponse> Klienten.OscarWinners.OscarNominatedMoviesSoap.GetAllWinningMoviesAsync(Klienten.OscarWinners.GetAllWinningMoviesRequest request) {
+        System.Threading.Tasks.Task<Klienten.Oscars.GetAllWinningMoviesResponse> Klienten.Oscars.OscarNominatedMoviesSoap.GetAllWinningMoviesAsync(Klienten.Oscars.GetAllWinningMoviesRequest request) {
             return base.Channel.GetAllWinningMoviesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Klienten.OscarWinners.GetAllWinningMoviesResponse> GetAllWinningMoviesAsync(string year) {
-            Klienten.OscarWinners.GetAllWinningMoviesRequest inValue = new Klienten.OscarWinners.GetAllWinningMoviesRequest();
-            inValue.Body = new Klienten.OscarWinners.GetAllWinningMoviesRequestBody();
+        public System.Threading.Tasks.Task<Klienten.Oscars.GetAllWinningMoviesResponse> GetAllWinningMoviesAsync(string year) {
+            Klienten.Oscars.GetAllWinningMoviesRequest inValue = new Klienten.Oscars.GetAllWinningMoviesRequest();
+            inValue.Body = new Klienten.Oscars.GetAllWinningMoviesRequestBody();
             inValue.Body.year = year;
-            return ((Klienten.OscarWinners.OscarNominatedMoviesSoap)(this)).GetAllWinningMoviesAsync(inValue);
+            return ((Klienten.Oscars.OscarNominatedMoviesSoap)(this)).GetAllWinningMoviesAsync(inValue);
         }
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="47939e9b-dee8-4608-b9a5-fd6901ef0c39" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dad6df35-4f91-49e9-a129-9a79e8ebeaba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="http://localhost:11033/OscarNominatedMovies.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="OscarNominatedMovies.wsdl" MetadataType="Wsdl" ID="251aa710-4b17-4446-bf70-f75fc3955f7d" SourceId="1" SourceUrl="http://localhost:11033/OscarNominatedMovies.asmx?wsdl" />
-    <MetadataFile FileName="OscarNominatedMovies.disco" MetadataType="Disco" ID="5e17df68-bb72-406e-b46c-5648a64378f1" SourceId="1" SourceUrl="http://localhost:11033/OscarNominatedMovies.asmx?disco" />
+    <MetadataFile FileName="OscarNominatedMovies.wsdl" MetadataType="Wsdl" ID="78fad4d7-4fcc-4465-b916-dbe968c9aef2" SourceId="1" SourceUrl="http://localhost:11033/OscarNominatedMovies.asmx?wsdl" />
+    <MetadataFile FileName="OscarNominatedMovies.disco" MetadataType="Disco" ID="842ca510-68eb-4f92-beb0-03bbe5be80ef" SourceId="1" SourceUrl="http://localhost:11033/OscarNominatedMovies.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

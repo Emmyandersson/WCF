@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Klienten.Oscars;
 
 namespace Klienten
 {
@@ -12,6 +13,12 @@ namespace Klienten
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+           OscarNominatedMoviesSoapClient client = new OscarNominatedMoviesSoapClient();
+            lblResult.Text = client.GetAllWinningMovies(TextBox1.Text);
         }
     }
 }

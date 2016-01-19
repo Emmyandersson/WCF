@@ -79,10 +79,10 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\Namesdagar\NamnsdagGenerator.wsdl" />
-    <Content Include="Service References\OscarWinners\Klienten.OscarWinners.GetAllWinningMoviesResponse.datasource">
+    <Content Include="Service References\Oscars\Klienten.Oscars.GetAllWinningMoviesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Service References\OscarWinners\OscarNominatedMovies.wsdl" />
+    <None Include="Service References\Oscars\OscarNominatedMovies.wsdl" />
     <None Include="Service References\SubtractTwoNums\Subtract_2_Nums.wsdl" />
     <None Include="Service References\WeatherPrediction\Weather.wsdl" />
     <None Include="Web.Debug.config">
@@ -122,10 +122,10 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\OscarWinners\OscarNominatedMovies.disco" />
-    <None Include="Service References\OscarWinners\configuration91.svcinfo" />
-    <None Include="Service References\OscarWinners\configuration.svcinfo" />
-    <None Include="Service References\OscarWinners\Reference.svcmap">
+    <None Include="Service References\Oscars\OscarNominatedMovies.disco" />
+    <None Include="Service References\Oscars\configuration91.svcinfo" />
+    <None Include="Service References\Oscars\configuration.svcinfo" />
+    <None Include="Service References\Oscars\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -194,7 +194,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Service References\OscarWinners\Reference.cs">
+    <Compile Include="Service References\Oscars\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -235,7 +235,7 @@
     <WCFMetadataStorage Include="Service References\Calc2Nums\" />
     <WCFMetadataStorage Include="Service References\Calc3Nums\" />
     <WCFMetadataStorage Include="Service References\Namesdagar\" />
-    <WCFMetadataStorage Include="Service References\OscarWinners\" />
+    <WCFMetadataStorage Include="Service References\Oscars\" />
     <WCFMetadataStorage Include="Service References\SubtractTwoNums\" />
     <WCFMetadataStorage Include="Service References\WeatherPrediction\" />
   </ItemGroup>

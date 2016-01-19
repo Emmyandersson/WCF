@@ -33,14 +33,11 @@ namespace Nominated_Movies
                 while (sr.Peek() >= 0)
                 {
                     var line = sr.ReadLine();
-                    if (line != null)
-                    {
-                        var splitLine = line.Split(new[] { ":", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+                    var splitLine = line?.Split(new[] { ":", "\n" }, StringSplitOptions.RemoveEmptyEntries);
 
-                        if (splitLine.Length == 2 )
-                        {
-                            _movieDictionary.Add(splitLine[0], splitLine[1]);
-                        }
+                    if (splitLine?.Length == 2 )
+                    {
+                        _movieDictionary.Add(splitLine[0], splitLine[1]);
                     }
                 } 
             }
