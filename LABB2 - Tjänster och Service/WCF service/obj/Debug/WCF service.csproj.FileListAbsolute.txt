@@ -1,0 +1,2 @@
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\LABB2 - Tjänster och Service\WCF service\bin\Debug\WCF service.exe.config
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\WCF service\bin\Debug\WCF service.exe.config

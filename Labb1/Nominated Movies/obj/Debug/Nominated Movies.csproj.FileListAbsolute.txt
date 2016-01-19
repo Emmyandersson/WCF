@@ -1,0 +1,20 @@
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\csc.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\vbc.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\VBCSCompiler.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\Nominated Movies.dll.config
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\Nominated Movies.dll
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\Nominated Movies.pdb
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\obj\Debug\Nominated Movies.csprojResolveAssemblyReference.cache
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\obj\Debug\Nominated Movies.dll
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\Labb1\Nominated Movies\obj\Debug\Nominated Movies.pdb
