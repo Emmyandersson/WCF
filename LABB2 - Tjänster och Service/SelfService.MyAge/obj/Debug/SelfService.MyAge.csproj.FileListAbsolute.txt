@@ -1,0 +1,6 @@
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.MyAge\bin\Debug\SelfService.MyAge.exe.config
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.MyAge\bin\Debug\SelfService.MyAge.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.MyAge\bin\Debug\SelfService.MyAge.pdb
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.MyAge\obj\Debug\SelfService.MyAge.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.MyAge\obj\Debug\SelfService.MyAge.pdb
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.MyAge\obj\Debug\SelfService.MyAge.csprojResolveAssemblyReference.cache

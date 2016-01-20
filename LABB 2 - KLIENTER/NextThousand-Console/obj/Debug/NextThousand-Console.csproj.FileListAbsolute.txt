@@ -1,0 +1,5 @@
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\NextThousand-Console\bin\Debug\NextThousand-Console.exe.config
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\NextThousand-Console\bin\Debug\NextThousand-Console.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\NextThousand-Console\bin\Debug\NextThousand-Console.pdb
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\NextThousand-Console\obj\Debug\NextThousand-Console.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\NextThousand-Console\obj\Debug\NextThousand-Console.pdb
