@@ -19,7 +19,7 @@ namespace SelfService.MyAge
             try
             {
                 //ABC - Endpoint
-                selfServiceHost.AddServiceEndpoint(typeof(IAge), new WSHttpBinding(), "IAgeCheckerService");
+                selfServiceHost.AddServiceEndpoint(typeof(IAge), new WSHttpBinding(), "AgeCheckerService");
 
                 //Metadata
                 ServiceMetadataBehavior smBehavior = new ServiceMetadataBehavior { HttpGetEnabled = true };

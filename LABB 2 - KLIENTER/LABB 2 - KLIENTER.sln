@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAge-Console", "MyAge-Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAge-Win", "MyAge-Win\MyAge-Win.csproj", "{DB9834BD-70CD-40F0-9091-49340D4FB1C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextThousand-Console", "NextThousand-Console\NextThousand-Console.csproj", "{065DA4CB-EAA2-499B-87D3-F3685BD28629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextThousand- Win", "NextThousand- Win\NextThousand- Win.csproj", "{1091BD2B-4E02-4881-A4AA-0E9D7B5E7AB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{DB9834BD-70CD-40F0-9091-49340D4FB1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB9834BD-70CD-40F0-9091-49340D4FB1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB9834BD-70CD-40F0-9091-49340D4FB1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{065DA4CB-EAA2-499B-87D3-F3685BD28629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{065DA4CB-EAA2-499B-87D3-F3685BD28629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{065DA4CB-EAA2-499B-87D3-F3685BD28629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{065DA4CB-EAA2-499B-87D3-F3685BD28629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1091BD2B-4E02-4881-A4AA-0E9D7B5E7AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1091BD2B-4E02-4881-A4AA-0E9D7B5E7AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1091BD2B-4E02-4881-A4AA-0E9D7B5E7AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1091BD2B-4E02-4881-A4AA-0E9D7B5E7AB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
