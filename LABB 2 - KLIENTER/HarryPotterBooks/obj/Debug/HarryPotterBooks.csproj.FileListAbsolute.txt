@@ -1,0 +1,5 @@
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks\bin\Debug\HarryPotterBooks.exe.config
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks\bin\Debug\HarryPotterBooks.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks\bin\Debug\HarryPotterBooks.pdb
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks\obj\Debug\HarryPotterBooks.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks\obj\Debug\HarryPotterBooks.pdb

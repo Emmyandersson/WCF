@@ -1,0 +1,6 @@
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.HarryPotter\bin\Debug\SelfService.HarryPotter.exe.config
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.HarryPotter\bin\Debug\SelfService.HarryPotter.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.HarryPotter\bin\Debug\SelfService.HarryPotter.pdb
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.HarryPotter\obj\Debug\SelfService.HarryPotter.csprojResolveAssemblyReference.cache
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.HarryPotter\obj\Debug\SelfService.HarryPotter.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB2 - Tjänster och Service\SelfService.HarryPotter\obj\Debug\SelfService.HarryPotter.pdb

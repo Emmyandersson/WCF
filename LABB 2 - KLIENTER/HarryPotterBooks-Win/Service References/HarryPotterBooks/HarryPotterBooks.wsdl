@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="BookName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BookNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BookNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BookNameSoapIn">
+    <wsdl:part name="parameters" element="tns:BookName" />
+  </wsdl:message>
+  <wsdl:message name="BookNameSoapOut">
+    <wsdl:part name="parameters" element="tns:BookNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HarryPotterBooksSoap">
+    <wsdl:operation name="BookName">
+      <wsdl:input message="tns:BookNameSoapIn" />
+      <wsdl:output message="tns:BookNameSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HarryPotterBooksSoap" type="tns:HarryPotterBooksSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BookName">
+      <soap:operation soapAction="http://tempuri.org/BookName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HarryPotterBooksSoap12" type="tns:HarryPotterBooksSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BookName">
+      <soap12:operation soapAction="http://tempuri.org/BookName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HarryPotterBooks">
+    <wsdl:port name="HarryPotterBooksSoap" binding="tns:HarryPotterBooksSoap">
+      <soap:address location="http://localhost:22266/HarryPotterBooks.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HarryPotterBooksSoap12" binding="tns:HarryPotterBooksSoap12">
+      <soap12:address location="http://localhost:22266/HarryPotterBooks.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

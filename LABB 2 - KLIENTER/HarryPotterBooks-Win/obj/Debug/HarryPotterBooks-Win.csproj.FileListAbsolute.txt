@@ -1,0 +1,9 @@
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks-Win\bin\Debug\HarryPotterBooks-Win.exe.config
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks-Win\bin\Debug\HarryPotterBooks-Win.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks-Win\bin\Debug\HarryPotterBooks-Win.pdb
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks-Win\obj\Debug\HarryPotterBooks-Win.csprojResolveAssemblyReference.cache
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks-Win\obj\Debug\HarryPotterBooks_Win.Form1.resources
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks-Win\obj\Debug\HarryPotterBooks_Win.Properties.Resources.resources
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks-Win\obj\Debug\HarryPotterBooks-Win.csproj.GenerateResource.Cache
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks-Win\obj\Debug\HarryPotterBooks-Win.exe
+C:\Users\Emmy\Documents\Visual Studio 2015\Projects\WCF\WCF\LABB 2 - KLIENTER\HarryPotterBooks-Win\obj\Debug\HarryPotterBooks-Win.pdb
